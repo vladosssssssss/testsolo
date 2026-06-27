@@ -37,7 +37,7 @@
       </div> -->
 
       <h1 class="hero-title">
-        Товарка<br /><em>з Китаєм</em>
+        Товари<br /><em>з Китаю</em>
       </h1>
 
       <p class="hero-sub">
@@ -587,16 +587,35 @@
   }
   end=parseInt(end);
   function pad(n){return String(n).padStart(2,'0');}
+  const els={
+    days:document.getElementById('t-days'),
+    hours:document.getElementById('t-hours'),
+    minutes:document.getElementById('t-minutes'),
+    seconds:document.getElementById('t-seconds')
+  };
+  // пишем в DOM только когда значение реально изменилось — без лишних перерисовок
+  function set(el,val){ if(el && el.dataset.v!==val){ el.dataset.v=val; el.textContent=val; } }
   function tick(){
     const diff=end-Date.now();
-    if(diff<=0){['t-days','t-hours','t-minutes','t-seconds'].forEach(id=>document.getElementById(id).textContent='00');return;}
-    document.getElementById('t-days').textContent=pad(Math.floor(diff/864e5));
-    document.getElementById('t-hours').textContent=pad(Math.floor(diff%864e5/36e5));
-    document.getElementById('t-minutes').textContent=pad(Math.floor(diff%36e5/6e4));
-    document.getElementById('t-seconds').textContent=pad(Math.floor(diff%6e4/1e3));
+    if(diff<=0){
+      set(els.days,'00');set(els.hours,'00');set(els.minutes,'00');set(els.seconds,'00');
+      return false;
+    }
+    set(els.days,pad(Math.floor(diff/864e5)));
+    set(els.hours,pad(Math.floor(diff%864e5/36e5)));
+    set(els.minutes,pad(Math.floor(diff%36e5/6e4)));
+    set(els.seconds,pad(Math.floor(diff%6e4/1e3)));
+    return true;
   }
-  tick();setInterval(tick,1000);
+  // самокорректирующийся таймер: выравниваемся по границе секунды, чтобы не было дрейфа/рывков
+  function loop(){
+    if(tick()===false) return;
+    const delay=1000-(Date.now()%1000);
+    setTimeout(loop,delay);
+  }
+  loop();
 })();
 </script>
 </body>
 </html>
+
