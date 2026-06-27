@@ -403,7 +403,7 @@ nav{
 .day-img-wrap{
   position:relative;aspect-ratio:16/9;border-radius:18px;
   background:rgba(201,151,94,.16);
-  padding:12px;box-sizing:border-box;
+  padding:6px;box-sizing:border-box;
 }
 /* layer 2: dashed frame holding the photo */
 .day-img{
@@ -681,7 +681,7 @@ footer{padding:50px 24px;border-top:1px solid rgba(201,151,94,.1)}
   .day-row-title{font-size:1.28rem;line-height:1.13}
   .day-row-desc{max-width:none;font-size:.83rem;line-height:1.56}
   .day-row-desc::before{width:30px;margin-bottom:10px}
-  .day-img-wrap{border-radius:14px;padding:8px}
+  .day-img-wrap{border-radius:14px;padding:4px}
   .day-img{border-radius:8px}
 
   .urgency{padding:52px 0 46px}

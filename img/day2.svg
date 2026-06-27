@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c130a"/><stop offset="1" stop-color="#0e0905"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9975e"/><stop offset="1" stop-color="#e6ba83"/></linearGradient>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.5" fill="#c9975e" opacity="0.04"/></pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/><rect width="1280" height="720" fill="url(#dots)"/>
+
+  <rect x="48" y="44" width="1184" height="632" rx="30" fill="#c9975e" opacity="0.06"/>
+  <rect x="48" y="44" width="1184" height="632" rx="30" fill="none" stroke="#c9975e" stroke-opacity="0.28" stroke-width="2"/>
+  <line x1="924" y1="80" x2="924" y2="640" stroke="#c9975e" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="4 13"/>
+  <circle cx="924" cy="44" r="22" fill="#140d07"/><circle cx="924" cy="676" r="22" fill="#140d07"/>
+
+  <text x="96" y="150" font-family="system-ui,Segoe UI,sans-serif" font-size="20" letter-spacing="7" fill="#d4a574">ТОВАРКА З КИТАЮ</text>
+  <text x="92" y="312" font-family="Georgia,'Cormorant Garamond',serif" font-size="68" fill="#f5f0e8">Пошук товарів</text>
+  <text x="92" y="398" font-family="Georgia,'Cormorant Garamond',serif" font-size="68" fill="url(#gold)">з потенціалом продажів</text>
+  <rect x="96" y="432" width="130" height="3" rx="1.5" fill="url(#gold)"/>
+
+  <!-- THEME: product cards, magnifier picks the winner + price tag -->
+  <g>
+    <!-- dim cards -->
+    <g fill="none" stroke="#c9975e" stroke-opacity="0.28" stroke-width="2">
+      <rect x="110" y="490" width="104" height="104" rx="12"/><rect x="566" y="490" width="104" height="104" rx="12"/><rect x="694" y="490" width="104" height="104" rx="12"/>
+    </g>
+    <g fill="#c9975e" opacity="0.18"><circle cx="140" cy="524" r="9"/><circle cx="596" cy="524" r="9"/><circle cx="724" cy="524" r="9"/></g>
+    <g fill="none" stroke="#c9975e" stroke-opacity="0.3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M122 566 L150 540 L172 558 L202 532"/><path d="M578 566 L606 540 L628 558 L658 532"/><path d="M706 566 L734 540 L756 558 L786 532"/>
+    </g>
+    <!-- winner card -->
+    <rect x="338" y="478" width="116" height="116" rx="14" fill="#c9975e" opacity="0.16"/>
+    <rect x="338" y="478" width="116" height="116" rx="14" fill="none" stroke="url(#gold)" stroke-width="3"/>
+    <path d="M352 558 L382 530 L406 550 L440 520" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="370" cy="512" r="9" fill="url(#gold)"/>
+    <!-- price tag -->
+    <g stroke="url(#gold)" stroke-width="2.5" fill="none" stroke-linejoin="round"><path d="M438 470 L470 470 L494 494 L466 522 L438 494 Z"/></g>
+    <circle cx="452" cy="484" r="4" fill="url(#gold)"/>
+    <!-- magnifier over winner -->
+    <circle cx="396" cy="536" r="74" fill="none" stroke="#f5f0e8" stroke-opacity="0.85" stroke-width="5"/>
+    <line x1="448" y1="588" x2="500" y2="640" stroke="#f5f0e8" stroke-opacity="0.85" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text x="396" y="636" font-family="system-ui,Segoe UI,sans-serif" font-size="15" letter-spacing="2" fill="#d4a574" text-anchor="middle">ТОВАР-ХІТ</text>
+
+  <text x="1078" y="156" font-family="system-ui,Segoe UI,sans-serif" font-size="16" letter-spacing="5" fill="#d4a574" text-anchor="middle">ДЕНЬ</text>
+  <text x="1078" y="404" font-family="Georgia,'Cormorant Garamond',serif" font-size="160" font-weight="700" fill="url(#gold)" text-anchor="middle">02</text>
+  <g stroke="#c9975e" stroke-opacity="0.3" stroke-width="3"><path d="M1016 470 h124 M1016 486 h124 M1016 502 h124 M1016 518 h124"/></g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c130a"/><stop offset="1" stop-color="#0e0905"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9975e"/><stop offset="1" stop-color="#e6ba83"/></linearGradient>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.5" fill="#c9975e" opacity="0.04"/></pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/><rect width="1280" height="720" fill="url(#dots)"/>
+
+  <rect x="48" y="44" width="1184" height="632" rx="30" fill="#c9975e" opacity="0.06"/>
+  <rect x="48" y="44" width="1184" height="632" rx="30" fill="none" stroke="#c9975e" stroke-opacity="0.28" stroke-width="2"/>
+  <line x1="924" y1="80" x2="924" y2="640" stroke="#c9975e" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="4 13"/>
+  <circle cx="924" cy="44" r="22" fill="#140d07"/><circle cx="924" cy="676" r="22" fill="#140d07"/>
+
+  <text x="96" y="150" font-family="system-ui,Segoe UI,sans-serif" font-size="20" letter-spacing="7" fill="#d4a574">ТОВАРКА З КИТАЮ</text>
+  <text x="92" y="312" font-family="Georgia,'Cormorant Garamond',serif" font-size="68" fill="#f5f0e8">Креативи, що</text>
+  <text x="92" y="398" font-family="Georgia,'Cormorant Garamond',serif" font-size="68" fill="url(#gold)">зупиняють увагу</text>
+  <rect x="96" y="432" width="130" height="3" rx="1.5" fill="url(#gold)"/>
+
+  <!-- THEME: video frame + editing timeline / waveform -->
+  <rect x="110" y="492" width="176" height="112" rx="14" fill="#c9975e" opacity="0.08" stroke="#c9975e" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="198" cy="548" r="34" fill="url(#gold)"/>
+  <path d="M188 532 L216 548 L188 564 Z" fill="#0e0905"/>
+  <path d="M310 548 H840" stroke="#c9975e" stroke-opacity="0.25" stroke-width="2"/>
+  <g stroke="url(#gold)" stroke-width="5" stroke-linecap="round">
+    <line x1="322" y1="536" x2="322" y2="560"/><line x1="350" y1="520" x2="350" y2="576"/><line x1="378" y1="530" x2="378" y2="566"/>
+    <line x1="406" y1="506" x2="406" y2="590"/><line x1="434" y1="528" x2="434" y2="568"/><line x1="462" y1="514" x2="462" y2="582"/>
+    <line x1="490" y1="534" x2="490" y2="562"/><line x1="518" y1="500" x2="518" y2="596"/><line x1="546" y1="526" x2="546" y2="570"/>
+    <line x1="574" y1="516" x2="574" y2="580"/><line x1="602" y1="538" x2="602" y2="558"/><line x1="630" y1="510" x2="630" y2="586"/>
+    <line x1="658" y1="528" x2="658" y2="568"/><line x1="686" y1="520" x2="686" y2="576"/><line x1="714" y1="534" x2="714" y2="562"/>
+    <line x1="742" y1="506" x2="742" y2="590"/><line x1="770" y1="530" x2="770" y2="566"/><line x1="798" y1="522" x2="798" y2="574"/>
+  </g>
+  <line x1="518" y1="494" x2="518" y2="602" stroke="#f5f0e8" stroke-opacity="0.7" stroke-width="2"/>
+  <circle cx="518" cy="548" r="9" fill="#f5f0e8"/>
+  <text x="198" y="636" font-family="system-ui,Segoe UI,sans-serif" font-size="15" letter-spacing="2" fill="#d4a574" text-anchor="middle">КРЕАТИВ</text>
+
+  <text x="1078" y="156" font-family="system-ui,Segoe UI,sans-serif" font-size="16" letter-spacing="5" fill="#d4a574" text-anchor="middle">ДЕНЬ</text>
+  <text x="1078" y="404" font-family="Georgia,'Cormorant Garamond',serif" font-size="160" font-weight="700" fill="url(#gold)" text-anchor="middle">03</text>
+  <g stroke="#c9975e" stroke-opacity="0.3" stroke-width="3"><path d="M1016 470 h124 M1016 486 h124 M1016 502 h124 M1016 518 h124"/></g>
+</svg>
